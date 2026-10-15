@@ -19,22 +19,29 @@ function App() {
       </nav>
 
       <section className="hero">
-        <p>Hello, I'm</p>
+  <div className="hero-content">
+    <p className="hero-label">HELLO, I'M</p>
 
-        <h1>Nikita Macucule</h1>
+    <h1>Nikita Macucule</h1>
 
-        <h2>ICT Graduate & Software Developer</h2>
+    <h2>ICT Graduate & Software Developer</h2>
 
-        <p>
-          I am passionate about software development, technology and
-          building solutions that solve real-world problems.
-        </p>
+    <p className="hero-description">
+      I enjoy building practical software solutions, learning new
+      technologies and turning ideas into working applications.
+    </p>
 
-        <div className="buttons">
-          <a href="#projects">View Projects</a>
-          <a href="#contact">Contact Me</a>
-        </div>
-      </section>
+    <div className="hero-buttons">
+      <a href="#projects" className="primary-button">
+        View My Work
+      </a>
+
+      <a href="#contact" className="secondary-button">
+        Let's Connect
+      </a>
+    </div>
+  </div>
+</section>
 
       <section id="about" className="section about">
   <div className="about-text">

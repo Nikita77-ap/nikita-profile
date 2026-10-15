@@ -315,6 +315,7 @@ footer {
   margin-bottom: 12px;
   line-height: 1.6;
 }
+
 .certificate-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -340,8 +341,76 @@ footer {
 .certificate-card p {
   color: #666;
 }
-@media (max-width: 768px)
 
+@media (max-width: 768px){
 .certificate-grid {
   grid-template-columns: 1fr;
+}
+}
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-label {
+  font-size: 14px !important;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  max-width: 650px;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.primary-button {
+  background: #222;
+  color: white;
+}
+
+.secondary-button {
+  border: 1px solid #222;
+  color: #222;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.75;
+}
+@media (max-width: 768px) {
+  .hero-content h1 {
+  font-size: 45px;
+}
+
+.hero-content h2 {
+  font-size: 22px;
+}
+
+.hero-buttons {
+  flex-direction: column;
+  width: fit-content;
+}
 }
