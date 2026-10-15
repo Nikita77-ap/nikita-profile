@@ -473,3 +473,666 @@ footer {
   background: #f1f1f1;
   color: #111;
 }
+@media (max-width: 768px) {
+  .hero {
+  flex-direction: column-reverse;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+}
+
+.hero-content h2 {
+  font-size: 22px;
+}
+
+.profile-circle {
+  width: 230px;
+  height: 230px;
+}
+
+.hero-buttons {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
+.project-preview {
+  height: 160px;
+  background: #111;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.project-preview span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.dark-mode {
+  background: #111;
+  color: white;
+  min-height: 100vh;
+}
+
+.dark-mode .section {
+  color: white;
+}
+
+.dark-mode .skill-category,
+.dark-mode .project-card,
+.dark-mode .education-card,
+.dark-mode .experience-card,
+.dark-mode .certificate-card,
+.dark-mode .about-card {
+  background: #1c1c1c;
+  color: white;
+  border-color: #333;
+}
+
+.dark-mode .skill-list span {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .secondary-project-button {
+  background: #333;
+  color: white;
+}
+
+.theme-button {
+  border: none;
+  padding: 9px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #111;
+  color: white;
+  font-size: 14px;
+}
+/* Dark mode text fixes */
+.dark-mode .education-card p,
+.dark-mode .education-card span,
+.dark-mode .experience-card p,
+.dark-mode .experience-card li,
+.dark-mode .certificate-card p,
+.dark-mode .about-text p {
+  color: #ddd;
+}
+
+/* Keep buttons readable */
+.dark-mode .primary-button {
+  background: white;
+  color: #111;
+}
+
+.dark-mode .secondary-button {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .project-button {
+  background: white;
+  color: #111;
+}
+
+.dark-mode .secondary-project-button {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .theme-button {
+  background: white;
+  color: #111;
+}
+
+
+:root {
+  --black: #0b0b0b;
+  --dark-black: #111111;
+  --gold: #d4af37;
+  --light-gold: #f0d878;
+  --white: #ffffff;
+  --light-grey: #dddddd;
+}
+
+/* Main website */
+.app {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--black);
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.navbar h2 {
+  color: var(--gold);
+}
+
+.nav-links a {
+  color: var(--white);
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+/* Hero */
+.hero {
+  background: var(--black);
+}
+
+.hero-label,
+.section-label {
+  color: var(--gold);
+}
+
+.hero-content h1 {
+  color: var(--white);
+}
+
+.hero-content h2 {
+  color: var(--gold);
+}
+
+.hero-description {
+  color: var(--light-grey);
+}
+
+/* Main buttons */
+.primary-button {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.primary-button:hover {
+  background: var(--light-gold);
+}
+
+.secondary-button {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.secondary-button:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+/* Sections */
+.section {
+  background: var(--black);
+}
+
+.section h2 {
+  color: var(--white);
+}
+
+/* About */
+.about-text p {
+  color: var(--light-grey);
+}
+
+.about-card {
+  background: var(--dark-black);
+  border: 1px solid #333;
+}
+
+.about-card h3 {
+  color: var(--gold);
+}
+
+.about-card p {
+  color: var(--white);
+}
+
+/* Skills */
+.skill-category {
+  background: var(--dark-black);
+  border: 1px solid #333;
+}
+
+.skill-category h3 {
+  color: var(--gold);
+}
+
+.skill-list span {
+  background: #222;
+  color: var(--white);
+  border: 1px solid #333;
+}
+
+/* Projects */
+.project-card {
+  background: var(--dark-black);
+  border: 1px solid #333;
+}
+
+.project-card h3 {
+  color: var(--gold);
+}
+
+.project-card p {
+  color: var(--light-grey);
+}
+
+.project-card .tech {
+  color: var(--gold);
+}
+
+.project-button {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.project-button:hover {
+  background: var(--light-gold);
+}
+
+.secondary-project-button {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+/* Education */
+.education-card {
+  background: var(--dark-black);
+  border: 1px solid #333;
+}
+
+.education-card h3 {
+  color: var(--gold);
+}
+
+.education-card p,
+.education-card span {
+  color: var(--light-grey);
+}
+
+/* Experience */
+.experience-card {
+  background: var(--dark-black);
+  border: 1px solid #333;
+}
+
+.experience-card h3 {
+  color: var(--gold);
+}
+
+.experience-card p,
+.experience-card li {
+  color: var(--light-grey);
+}
+
+/* Certificates */
+.certificate-card {
+  background: var(--dark-black);
+  border: 1px solid #333;
+}
+
+.certificate-card h3 {
+  color: var(--gold);
+}
+
+.certificate-card p {
+  color: var(--light-grey);
+}
+
+/* Contact */
+.contact {
+  background: var(--black);
+}
+
+.contact h2 {
+  color: var(--gold);
+}
+
+.contact p {
+  color: var(--light-grey);
+}
+
+.contact-links a {
+  color: var(--gold);
+}
+
+.contact-links a:hover {
+  color: var(--light-gold);
+}
+
+/* Theme button */
+.theme-button {
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+}
+
+.theme-button:hover {
+  background: var(--light-gold);
+}
+
+/* Footer */
+footer {
+  background: var(--dark-black);
+  color: var(--light-grey);
+  border-top: 1px solid #333;
+}
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 80px 8%;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  margin: 10px 0;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  padding: 8px;
+  background: linear-gradient(
+    135deg,
+    #7b2cbf,
+    #b8ff00
+  );
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #111;
+}
+.profile-circle {
+  animation: floatProfile 4s ease-in-out infinite;
+}
+
+@keyframes floatProfile {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/* =========================
+   PURPLE + LIME THEME
+   ========================= */
+
+:root {
+  --purple: #7b2cbf;
+  --dark-purple: #16001f;
+  --deep-purple: #240033;
+  --lime: #b8ff00;
+  --white: #ffffff;
+  --light-text: #dddddd;
+}
+
+/* Main */
+.app {
+  background: var(--dark-purple);
+  color: var(--white);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--dark-purple);
+  border-bottom: 1px solid #3b1450;
+}
+
+.navbar h2 {
+  color: var(--lime);
+}
+
+.nav-links a {
+  color: var(--white);
+}
+
+.nav-links a:hover {
+  color: var(--lime);
+}
+
+/* Hero */
+.hero {
+  background:
+    radial-gradient(circle at 80% 30%, #4b0875 0%, transparent 35%),
+    var(--dark-purple);
+}
+
+.hero-label,
+.section-label {
+  color: var(--lime);
+}
+
+.hero-content h1 {
+  color: var(--white);
+}
+
+.hero-content h2 {
+  color: var(--lime);
+}
+
+.hero-description {
+  color: var(--light-text);
+}
+
+/* Buttons */
+.primary-button {
+  background: var(--lime);
+  color: #16001f;
+}
+
+.primary-button:hover {
+  background: white;
+  color: var(--purple);
+}
+
+.secondary-button {
+  background: transparent;
+  color: var(--lime);
+  border: 1px solid var(--lime);
+}
+
+.secondary-button:hover {
+  background: var(--lime);
+  color: var(--dark-purple);
+}
+
+/* Sections */
+.section {
+  background: var(--dark-purple);
+}
+
+.section h2 {
+  color: var(--white);
+}
+
+/* About */
+.about-text p {
+  color: var(--light-text);
+}
+
+.about-card {
+  background: var(--deep-purple);
+  border: 1px solid #54206d;
+}
+
+.about-card h3 {
+  color: var(--lime);
+}
+
+.about-card p {
+  color: var(--white);
+}
+
+/* Skills */
+.skill-category {
+  background: var(--deep-purple);
+  border: 1px solid #54206d;
+}
+
+.skill-category h3 {
+  color: var(--lime);
+}
+
+.skill-list span {
+  background: #35104a;
+  color: var(--white);
+  border: 1px solid #54206d;
+}
+
+/* Projects */
+.project-card {
+  background: var(--deep-purple);
+  border: 1px solid #54206d;
+}
+
+.project-card h3 {
+  color: var(--lime);
+}
+
+.project-card p {
+  color: var(--light-text);
+}
+
+.project-card .tech {
+  color: var(--lime);
+}
+
+.project-button {
+  background: var(--lime);
+  color: var(--dark-purple);
+}
+
+.project-button:hover {
+  background: white;
+}
+
+.secondary-project-button {
+  background: transparent;
+  color: var(--lime);
+  border: 1px solid var(--lime);
+}
+
+/* Education */
+.education-card {
+  background: var(--deep-purple);
+  border: 1px solid #54206d;
+}
+
+.education-card h3 {
+  color: var(--lime);
+}
+
+.education-card p,
+.education-card span {
+  color: var(--light-text);
+}
+
+/* Experience */
+.experience-card {
+  background: var(--deep-purple);
+  border: 1px solid #54206d;
+}
+
+.experience-card h3 {
+  color: var(--lime);
+}
+
+.experience-card p,
+.experience-card li {
+  color: var(--light-text);
+}
+
+/* Certificates */
+.certificate-card {
+  background: var(--deep-purple);
+  border: 1px solid #54206d;
+}
+
+.certificate-card h3 {
+  color: var(--lime);
+}
+
+.certificate-card p {
+  color: var(--light-text);
+}
+
+/* Contact */
+.contact {
+  background: var(--dark-purple);
+}
+
+.contact h2 {
+  color: var(--lime);
+}
+
+.contact p {
+  color: var(--light-text);
+}
+
+.contact-links a {
+  color: var(--lime);
+}
+
+.contact-links a:hover {
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #0d0012;
+  color: var(--light-text);
+  border-top: 1px solid #3b1450;
+}

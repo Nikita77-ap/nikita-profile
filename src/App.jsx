@@ -1,11 +1,13 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className="app">
+   <div className={darkMode ? "app dark-mode" : "app"}>
 
       <nav className="navbar">
-        <h2>Nikita.</h2>
+        <h2>Nikita Macucule Portfolio</h2>
 
         <div className="nav-links">
           <a href="#about">About</a>
@@ -16,29 +18,50 @@ function App() {
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
+        <button
+  className="theme-button"
+  onClick={() => setDarkMode(!darkMode)}
+>
+  {darkMode ? "☀️ Light" : "🌙 Dark"}
+</button>
       </nav>
 
-      <section className="hero">
+      <section id="home" className="hero">
   <div className="hero-content">
     <p className="hero-label">HELLO, I'M</p>
 
     <h1>Nikita Macucule</h1>
 
-    <h2>ICT Graduate & Software Developer</h2>
+    <h2>ICT Application Development Graduate</h2>
 
     <p className="hero-description">
-      I enjoy building practical software solutions, learning new
-      technologies and turning ideas into working applications.
+      I am a software developer passionate about building practical,
+      creative and user-friendly applications. I enjoy learning new
+      technologies and turning ideas into working solutions.
     </p>
 
     <div className="hero-buttons">
       <a href="#projects" className="primary-button">
-        View My Work
+        View My Projects
+      </a>
+
+      <a href="/cv/Nikita-Macucule-CV.pdf" className="secondary-button">
+        Download CV
       </a>
 
       <a href="#contact" className="secondary-button">
-        Let's Connect
+        Contact Me
       </a>
+    </div>
+  </div>
+
+  <div className="hero-image">
+    <div className="profile-circle">
+      <img
+        src="/images/profile.JPG"
+        alt="Nikita Macucule"
+      />
+    
       <a
   href="/cv/Nikita-Macucule-CV.pdf"
   target="_blank"
@@ -254,6 +277,9 @@ function App() {
         <div className="projects">
 
           <div className="project-card">
+            <div className="project-preview">
+  <span>UMP NAVIGATION APP</span>
+</div>
   <h3>UMP Navigation App</h3>
 
   <p>
@@ -287,6 +313,9 @@ function App() {
 </div>
 
          <div className="project-card">
+          <div className="project-preview">
+  <span>CODEDOJO</span>
+</div>
   <h3>CodeDojo</h3>
 
   <p>
@@ -318,6 +347,9 @@ function App() {
 </div>
 
           <div className="project-card">
+            <div className="project-preview">
+  <span>SMART FARM ASSISTANT</span>
+</div>
   <h3>Smart Farm Assistant</h3>
 
   <p>
