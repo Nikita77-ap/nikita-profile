@@ -246,28 +246,99 @@ function App() {
         <div className="projects">
 
           <div className="project-card">
-            <h3>UMP Navigation App</h3>
-            <p>
-              A campus navigation application developed to help students
-              and visitors navigate the University of Mpumalanga campus.
-            </p>
-          </div>
+  <h3>UMP Navigation App</h3>
+
+  <p>
+    A campus navigation application developed for the University of
+    Mpumalanga to help students and visitors find buildings and navigate
+    around campus.
+  </p>
+
+  <p className="tech">
+    React Native • Expo • Node.js • Express • MongoDB
+  </p>
+
+  <div className="project-buttons">
+    <a
+      href="https://github.com/Nikita77-ap/Ump-Nav-app"
+      target="_blank"
+      rel="noreferrer"
+      className="project-button"
+    >
+      GitHub
+    </a>
+
+    <a
+      href="#"
+      onClick={(e) => e.preventDefault()}
+      className="project-button secondary-project-button"
+    >
+      Live Demo
+    </a>
+  </div>
+</div>
+
+         <div className="project-card">
+  <h3>CodeDojo</h3>
+
+  <p>
+    An educational platform designed to help first-year programming
+    students practise coding and get support while learning.
+  </p>
+
+  <p className="tech">
+    React • Node.js • JavaScript
+  </p>
+
+  <div className="project-buttons">
+    <a
+      href="#"
+      onClick={(e) => e.preventDefault()}
+      className="project-button"
+    >
+      GitHub
+    </a>
+
+    <a
+      href="#"
+      onClick={(e) => e.preventDefault()}
+      className="project-button secondary-project-button"
+    >
+      Coming Soon
+    </a>
+  </div>
+</div>
 
           <div className="project-card">
-            <h3>CodeDojo</h3>
-            <p>
-              An educational platform concept designed to help students
-              improve their programming skills.
-            </p>
-          </div>
+  <h3>Smart Farm Assistant</h3>
 
-          <div className="project-card">
-            <h3>Smart Farm Assistant</h3>
-            <p>
-              A technology project focused on helping farmers use digital
-              tools and information to make better decisions.
-            </p>
-          </div>
+  <p>
+    A smart agriculture project concept that uses digital tools and data
+    to help farmers make better decisions.
+  </p>
+
+  <p className="tech">
+    React • APIs • Data
+  </p>
+
+  <div className="project-buttons">
+    <a
+      href="#"
+      onClick={(e) => e.preventDefault()}
+      className="project-button"
+    >
+      GitHub
+    </a>
+
+    <a
+      href="#"
+      onClick={(e) => e.preventDefault()}
+      className="project-button secondary-project-button"
+    >
+      Coming Soon
+    </a>
+  </div>
+</div>
 
         </div>
       </section>
