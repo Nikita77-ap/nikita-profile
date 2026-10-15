@@ -39,6 +39,14 @@ function App() {
       <a href="#contact" className="secondary-button">
         Let's Connect
       </a>
+      <a
+  href="/cv/Nikita-Macucule-CV.pdf"
+  target="_blank"
+  rel="noreferrer"
+  className="secondary-button"
+>
+  Download CV
+</a>
     </div>
   </div>
 </section>
